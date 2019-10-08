@@ -33,13 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func callSecondView(_ sender: Any) {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        transition.type = .push
-        transition.subtype = .fromBottom
-        navigationController?.view.layer.add(transition, forKey: kCATransition)
-        navigationController?.pushViewController(SecondViewController, animated: false)
+        self.performSegue(withIdentifier: "secondViewSegue", sender: self)
     }
 }
 
