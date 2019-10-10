@@ -15,9 +15,7 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func performBack(_ sender: Any) {
-        
+    @IBAction func performCallWallet(_ sender: Any) {
+        self.performSegue(withIdentifier: "callWalletSegue", sender: self)
     }
-    
-
 }
