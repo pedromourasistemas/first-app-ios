@@ -17,6 +17,13 @@
 		90CE0E31234CC3C4005ACBD6 /* Treinamento_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E30234CC3C4005ACBD6 /* Treinamento_iOSUITests.swift */; };
 		90CE0E3F234CD77D005ACBD6 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE0E3E234CD77D005ACBD6 /* Second.storyboard */; };
 		90CE0E41234CD7A5005ACBD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */; };
+		90E06A7B235E17A300F6B57A /* CardOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7A235E17A300F6B57A /* CardOneView.xib */; };
+		90E06A7D235E201200F6B57A /* CardTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7C235E201200F6B57A /* CardTwoView.xib */; };
+		90E06A7F235E248A00F6B57A /* CardThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7E235E248A00F6B57A /* CardThreeView.xib */; };
+		90E06A81235E25F200F6B57A /* TransactionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A80235E25F200F6B57A /* TransactionsView.xib */; };
+		90E06A84235E3DDA00F6B57A /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A82235E3DDA00F6B57A /* NibView.swift */; };
+		90E06A85235E3DDA00F6B57A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A83235E3DDA00F6B57A /* UIView.swift */; };
+		90E06A87235E3E8700F6B57A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A86235E3E8700F6B57A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		90CE0E32234CC3C4005ACBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90CE0E3E234CD77D005ACBD6 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		90E06A7A235E17A300F6B57A /* CardOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardOneView.xib; sourceTree = "<group>"; };
+		90E06A7C235E201200F6B57A /* CardTwoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTwoView.xib; sourceTree = "<group>"; };
+		90E06A7E235E248A00F6B57A /* CardThreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardThreeView.xib; sourceTree = "<group>"; };
+		90E06A80235E25F200F6B57A /* TransactionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsView.xib; sourceTree = "<group>"; };
+		90E06A82235E3DDA00F6B57A /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		90E06A83235E3DDA00F6B57A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		90E06A86235E3E8700F6B57A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,13 @@
 				90CE0E1C234CC3C3005ACBD6 /* Info.plist */,
 				90CE0E3E234CD77D005ACBD6 /* Second.storyboard */,
 				90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */,
+				90E06A7A235E17A300F6B57A /* CardOneView.xib */,
+				90E06A7C235E201200F6B57A /* CardTwoView.xib */,
+				90E06A7E235E248A00F6B57A /* CardThreeView.xib */,
+				90E06A80235E25F200F6B57A /* TransactionsView.xib */,
+				90E06A82235E3DDA00F6B57A /* NibView.swift */,
+				90E06A83235E3DDA00F6B57A /* UIView.swift */,
+				90E06A86235E3E8700F6B57A /* TableViewController.swift */,
 			);
 			path = "Treinamento iOS";
 			sourceTree = "<group>";
@@ -239,9 +260,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				90CE0E3F234CD77D005ACBD6 /* Second.storyboard in Resources */,
+				90E06A81235E25F200F6B57A /* TransactionsView.xib in Resources */,
 				90CE0E1B234CC3C3005ACBD6 /* LaunchScreen.storyboard in Resources */,
 				90CE0E18234CC3C3005ACBD6 /* Assets.xcassets in Resources */,
+				90E06A7F235E248A00F6B57A /* CardThreeView.xib in Resources */,
 				90CE0E16234CC3C2005ACBD6 /* Main.storyboard in Resources */,
+				90E06A7B235E17A300F6B57A /* CardOneView.xib in Resources */,
+				90E06A7D235E201200F6B57A /* CardTwoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				90CE0E41234CD7A5005ACBD6 /* SecondViewController.swift in Sources */,
+				90E06A87235E3E8700F6B57A /* TableViewController.swift in Sources */,
 				90CE0E13234CC3C2005ACBD6 /* ViewController.swift in Sources */,
 				90CE0E0F234CC3C2005ACBD6 /* AppDelegate.swift in Sources */,
 				90CE0E11234CC3C2005ACBD6 /* SceneDelegate.swift in Sources */,
+				90E06A85235E3DDA00F6B57A /* UIView.swift in Sources */,
+				90E06A84235E3DDA00F6B57A /* NibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
