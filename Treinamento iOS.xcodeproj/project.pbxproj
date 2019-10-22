@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9042583E235F2C8D00013152 /* CardOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042583D235F2C8D00013152 /* CardOneView.swift */; };
+		90425840235F2CAD00013152 /* CardTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042583F235F2CAD00013152 /* CardTwoView.swift */; };
+		90425842235F2CBF00013152 /* CardThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90425841235F2CBF00013152 /* CardThreeView.swift */; };
+		90425844235F2CD700013152 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90425843235F2CD700013152 /* TransactionView.swift */; };
+		9048B606235F2F3C00B62F46 /* UIBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B605235F2F3C00B62F46 /* UIBaseView.swift */; };
+		9048B608235F2FEE00B62F46 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B607235F2FEE00B62F46 /* Helper.swift */; };
 		90CE0E0F234CC3C2005ACBD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E0E234CC3C2005ACBD6 /* AppDelegate.swift */; };
 		90CE0E11234CC3C2005ACBD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E10234CC3C2005ACBD6 /* SceneDelegate.swift */; };
 		90CE0E13234CC3C2005ACBD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E12234CC3C2005ACBD6 /* ViewController.swift */; };
@@ -15,14 +21,12 @@
 		90CE0E1B234CC3C3005ACBD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE0E19234CC3C3005ACBD6 /* LaunchScreen.storyboard */; };
 		90CE0E26234CC3C3005ACBD6 /* Treinamento_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E25234CC3C3005ACBD6 /* Treinamento_iOSTests.swift */; };
 		90CE0E31234CC3C4005ACBD6 /* Treinamento_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E30234CC3C4005ACBD6 /* Treinamento_iOSUITests.swift */; };
-		90CE0E3F234CD77D005ACBD6 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE0E3E234CD77D005ACBD6 /* Second.storyboard */; };
+		90CE0E3F234CD77D005ACBD6 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE0E3E234CD77D005ACBD6 /* Transactions.storyboard */; };
 		90CE0E41234CD7A5005ACBD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */; };
 		90E06A7B235E17A300F6B57A /* CardOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7A235E17A300F6B57A /* CardOneView.xib */; };
 		90E06A7D235E201200F6B57A /* CardTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7C235E201200F6B57A /* CardTwoView.xib */; };
 		90E06A7F235E248A00F6B57A /* CardThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A7E235E248A00F6B57A /* CardThreeView.xib */; };
 		90E06A81235E25F200F6B57A /* TransactionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E06A80235E25F200F6B57A /* TransactionsView.xib */; };
-		90E06A84235E3DDA00F6B57A /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A82235E3DDA00F6B57A /* NibView.swift */; };
-		90E06A85235E3DDA00F6B57A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A83235E3DDA00F6B57A /* UIView.swift */; };
 		90E06A87235E3E8700F6B57A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E06A86235E3E8700F6B57A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9042583D235F2C8D00013152 /* CardOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOneView.swift; sourceTree = "<group>"; };
+		9042583F235F2CAD00013152 /* CardTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTwoView.swift; sourceTree = "<group>"; };
+		90425841235F2CBF00013152 /* CardThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardThreeView.swift; sourceTree = "<group>"; };
+		90425843235F2CD700013152 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		9048B605235F2F3C00B62F46 /* UIBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBaseView.swift; sourceTree = "<group>"; };
+		9048B607235F2FEE00B62F46 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		90CE0E0B234CC3C2005ACBD6 /* Treinamento iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Treinamento iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CE0E0E234CC3C2005ACBD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CE0E10234CC3C2005ACBD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,14 +68,12 @@
 		90CE0E2C234CC3C3005ACBD6 /* Treinamento iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Treinamento iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CE0E30234CC3C4005ACBD6 /* Treinamento_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treinamento_iOSUITests.swift; sourceTree = "<group>"; };
 		90CE0E32234CC3C4005ACBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90CE0E3E234CD77D005ACBD6 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		90CE0E3E234CD77D005ACBD6 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		90E06A7A235E17A300F6B57A /* CardOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardOneView.xib; sourceTree = "<group>"; };
 		90E06A7C235E201200F6B57A /* CardTwoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTwoView.xib; sourceTree = "<group>"; };
 		90E06A7E235E248A00F6B57A /* CardThreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardThreeView.xib; sourceTree = "<group>"; };
 		90E06A80235E25F200F6B57A /* TransactionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsView.xib; sourceTree = "<group>"; };
-		90E06A82235E3DDA00F6B57A /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
-		90E06A83235E3DDA00F6B57A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		90E06A86235E3E8700F6B57A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +102,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		909BEAC3235F8A0A00D8E460 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				90CE0E12234CC3C2005ACBD6 /* ViewController.swift */,
+				90CE0E14234CC3C2005ACBD6 /* Main.storyboard */,
+				90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		909BEAC4235F8B5900D8E460 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				909BEAC5235F8B8C00D8E460 /* xibs */,
+				90CE0E3E234CD77D005ACBD6 /* Transactions.storyboard */,
+				90E06A86235E3E8700F6B57A /* TableViewController.swift */,
+				9042583D235F2C8D00013152 /* CardOneView.swift */,
+				9042583F235F2CAD00013152 /* CardTwoView.swift */,
+				90425841235F2CBF00013152 /* CardThreeView.swift */,
+				90425843235F2CD700013152 /* TransactionView.swift */,
+				9048B605235F2F3C00B62F46 /* UIBaseView.swift */,
+				9048B607235F2FEE00B62F46 /* Helper.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		909BEAC5235F8B8C00D8E460 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				90E06A7A235E17A300F6B57A /* CardOneView.xib */,
+				90E06A7C235E201200F6B57A /* CardTwoView.xib */,
+				90E06A7E235E248A00F6B57A /* CardThreeView.xib */,
+				90E06A80235E25F200F6B57A /* TransactionsView.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
 		90CE0E02234CC3C2005ACBD6 = {
 			isa = PBXGroup;
 			children = (
@@ -117,22 +162,13 @@
 		90CE0E0D234CC3C2005ACBD6 /* Treinamento iOS */ = {
 			isa = PBXGroup;
 			children = (
+				909BEAC4235F8B5900D8E460 /* Transactions */,
+				909BEAC3235F8A0A00D8E460 /* Main */,
 				90CE0E0E234CC3C2005ACBD6 /* AppDelegate.swift */,
 				90CE0E10234CC3C2005ACBD6 /* SceneDelegate.swift */,
-				90CE0E12234CC3C2005ACBD6 /* ViewController.swift */,
-				90CE0E14234CC3C2005ACBD6 /* Main.storyboard */,
 				90CE0E17234CC3C3005ACBD6 /* Assets.xcassets */,
 				90CE0E19234CC3C3005ACBD6 /* LaunchScreen.storyboard */,
 				90CE0E1C234CC3C3005ACBD6 /* Info.plist */,
-				90CE0E3E234CD77D005ACBD6 /* Second.storyboard */,
-				90CE0E40234CD7A5005ACBD6 /* SecondViewController.swift */,
-				90E06A7A235E17A300F6B57A /* CardOneView.xib */,
-				90E06A7C235E201200F6B57A /* CardTwoView.xib */,
-				90E06A7E235E248A00F6B57A /* CardThreeView.xib */,
-				90E06A80235E25F200F6B57A /* TransactionsView.xib */,
-				90E06A82235E3DDA00F6B57A /* NibView.swift */,
-				90E06A83235E3DDA00F6B57A /* UIView.swift */,
-				90E06A86235E3E8700F6B57A /* TableViewController.swift */,
 			);
 			path = "Treinamento iOS";
 			sourceTree = "<group>";
@@ -259,7 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90CE0E3F234CD77D005ACBD6 /* Second.storyboard in Resources */,
+				90CE0E3F234CD77D005ACBD6 /* Transactions.storyboard in Resources */,
 				90E06A81235E25F200F6B57A /* TransactionsView.xib in Resources */,
 				90CE0E1B234CC3C3005ACBD6 /* LaunchScreen.storyboard in Resources */,
 				90CE0E18234CC3C3005ACBD6 /* Assets.xcassets in Resources */,
@@ -291,13 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90425840235F2CAD00013152 /* CardTwoView.swift in Sources */,
 				90CE0E41234CD7A5005ACBD6 /* SecondViewController.swift in Sources */,
 				90E06A87235E3E8700F6B57A /* TableViewController.swift in Sources */,
 				90CE0E13234CC3C2005ACBD6 /* ViewController.swift in Sources */,
+				9042583E235F2C8D00013152 /* CardOneView.swift in Sources */,
+				90425844235F2CD700013152 /* TransactionView.swift in Sources */,
+				90425842235F2CBF00013152 /* CardThreeView.swift in Sources */,
 				90CE0E0F234CC3C2005ACBD6 /* AppDelegate.swift in Sources */,
 				90CE0E11234CC3C2005ACBD6 /* SceneDelegate.swift in Sources */,
-				90E06A85235E3DDA00F6B57A /* UIView.swift in Sources */,
-				90E06A84235E3DDA00F6B57A /* NibView.swift in Sources */,
+				9048B606235F2F3C00B62F46 /* UIBaseView.swift in Sources */,
+				9048B608235F2FEE00B62F46 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
