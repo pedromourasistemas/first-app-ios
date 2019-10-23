@@ -7,11 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Atk-4Z-S5y">
             <objects>
                 <navigationController id="cbY-0b-AmJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabTransactions" selectedImage="icTabTransactions" id="AMa-ea-JUO"/>
+                    <tabBarItem key="tabBarItem" title="" image="icTabTransactions" selectedImage="icTabTransactions" id="AMa-ea-JUO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ite-fb-KXF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -35,17 +35,20 @@
                     </tabBar>
                     <connections>
                         <segue destination="cbY-0b-AmJ" kind="relationship" relationship="viewControllers" id="5Wc-ww-9az"/>
+                        <segue destination="eVw-ek-oyd" kind="relationship" relationship="viewControllers" id="qk0-3p-l3a"/>
+                        <segue destination="L9q-sP-LpP" kind="relationship" relationship="viewControllers" id="nB1-fT-vTo"/>
+                        <segue destination="XVz-zJ-Uh3" kind="relationship" relationship="viewControllers" id="Q6T-Dp-S99"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEl-al-kIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2080" y="-1783"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="bKg-s7-oJe">
             <objects>
                 <navigationController id="eVw-ek-oyd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabSocialCash" selectedImage="icTabSocialCash" id="wUE-4Z-bHN"/>
+                    <tabBarItem key="tabBarItem" title="" image="icTabSocialCash" selectedImage="icTabSocialCash" id="wUE-4Z-bHN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cuV-8a-fwy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -55,11 +58,11 @@
             </objects>
             <point key="canvasLocation" x="1271" y="-881"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Rpj-SF-tXE">
             <objects>
                 <navigationController id="L9q-sP-LpP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabServices" selectedImage="icTabServices" id="sZW-fS-Kbg"/>
+                    <tabBarItem key="tabBarItem" title="" image="icTabServices" selectedImage="icTabServices" id="sZW-fS-Kbg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2iC-1a-STS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,11 +72,11 @@
             </objects>
             <point key="canvasLocation" x="2080" y="-881"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="BKm-SD-crs">
             <objects>
                 <navigationController id="XVz-zJ-Uh3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabContacts" selectedImage="icTabContacts" id="F84-cg-Wif"/>
+                    <tabBarItem key="tabBarItem" title="" image="icTabContacts" selectedImage="icTabContacts" id="F84-cg-Wif"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mC7-5h-nB2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -105,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-fg-hvH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-fg-hvH">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -129,15 +132,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardTwoCell" rowHeight="120" id="g9d-OT-Fhe">
-                                        <rect key="frame" x="0.0" y="352" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardTwoCell" rowHeight="77" id="g9d-OT-Fhe">
+                                        <rect key="frame" x="0.0" y="352" width="414" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g9d-OT-Fhe" id="wW4-ZT-PyH">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-mi-9b4" userLabel="Card Two View" customClass="CardTwoView" customModule="Treinamento_iOS" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 </view>
                                             </subviews>
@@ -146,6 +149,26 @@
                                                 <constraint firstItem="2ck-mi-9b4" firstAttribute="leading" secondItem="wW4-ZT-PyH" secondAttribute="leading" id="ELK-iT-4UM"/>
                                                 <constraint firstAttribute="bottom" secondItem="2ck-mi-9b4" secondAttribute="bottom" id="I7Z-HT-9Su"/>
                                                 <constraint firstItem="2ck-mi-9b4" firstAttribute="top" secondItem="wW4-ZT-PyH" secondAttribute="top" id="Phi-0n-yK3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionsView" rowHeight="108" id="kiC-9d-HRh" userLabel="CarThreeCell">
+                                        <rect key="frame" x="0.0" y="429" width="414" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kiC-9d-HRh" id="qXS-5i-DRF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAj-cu-TAr" userLabel="Card Three View" customClass="TransactionsView" customModule="Treinamento_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zAj-cu-TAr" firstAttribute="top" secondItem="qXS-5i-DRF" secondAttribute="top" id="3ZS-fu-ipu"/>
+                                                <constraint firstItem="zAj-cu-TAr" firstAttribute="leading" secondItem="qXS-5i-DRF" secondAttribute="leading" id="6es-Pb-KKl"/>
+                                                <constraint firstAttribute="trailing" secondItem="zAj-cu-TAr" secondAttribute="trailing" id="MhS-Kd-8ic"/>
+                                                <constraint firstAttribute="bottom" secondItem="zAj-cu-TAr" secondAttribute="bottom" id="amO-4i-9ti"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -173,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfm-id-b19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="78"/>
+            <point key="canvasLocation" x="476.81159420289856" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>

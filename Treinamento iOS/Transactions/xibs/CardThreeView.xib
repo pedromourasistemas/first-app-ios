@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="gJC-Ir-Hde">
-            <rect key="frame" x="0.0" y="0.0" width="370" height="277"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-rv-zxh" userLabel="SectionDate">
@@ -36,7 +36,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="V9D-8J-F4A"/>
-            <point key="canvasLocation" x="216" y="-52.623688155922046"/>
+            <point key="canvasLocation" x="251.19999999999999" y="-30.134932533733135"/>
         </view>
     </objects>
 </document>

@@ -7,7 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardOneView" customModule="Treinamento_iOS" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardOneView" customModule="Treinamento_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="hideAmountButton" destination="PMo-po-ZNb" id="B2p-oo-oa6"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="Sn1-X3-8PA">
             <rect key="frame" x="0.0" y="0.0" width="375" height="319"/>
@@ -23,7 +27,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 18,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAL-rZ-fWX">
-                    <rect key="frame" x="114" y="52" width="147" height="44"/>
+                    <rect key="frame" x="120" y="52" width="141" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="VVO-Q7-9vv"/>
                     </constraints>
@@ -78,11 +82,15 @@
                     <rect key="frame" x="157" y="167" width="24" height="24"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-tu-8xk">
-                    <rect key="frame" x="189" y="165" width="24" height="26"/>
+                    <rect key="frame" x="189" y="165" width="24" height="24"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMo-po-ZNb">
-                    <rect key="frame" x="136" y="122" width="103" height="23"/>
+                    <rect key="frame" x="140" y="122" width="95" height="23"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="GKl-gK-PTc"/>
+                        <constraint firstAttribute="height" constant="23" id="Kbs-Bo-aRr"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="Ocultar saldo">
                         <color key="titleColor" red="0.39215686274509803" green="0.396078431372549" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,13 +108,13 @@
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="ZAL-rZ-fWX" secondAttribute="trailing" constant="114" id="2Sb-Nu-hCh"/>
                 <constraint firstItem="cG0-ft-6KY" firstAttribute="leading" secondItem="KFJ-tu-8xk" secondAttribute="trailing" constant="12" id="5VJ-fg-6R8"/>
                 <constraint firstItem="m49-XN-Rv2" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="32" id="6BD-bQ-qfR"/>
-                <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="PMo-po-ZNb" secondAttribute="trailing" constant="136" id="6FU-7g-dGx"/>
+                <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="PMo-po-ZNb" secondAttribute="trailing" constant="140" id="6FU-7g-dGx"/>
                 <constraint firstItem="KHQ-oo-RCw" firstAttribute="leading" secondItem="Sn1-X3-8PA" secondAttribute="leading" constant="32" id="9la-Kw-MXo"/>
                 <constraint firstItem="Ae2-yk-pGM" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="130" id="A7m-Sr-L3d"/>
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="m49-XN-Rv2" secondAttribute="trailing" constant="32" id="HsA-7S-62P"/>
                 <constraint firstItem="KFJ-tu-8xk" firstAttribute="leading" secondItem="cBH-77-Qd3" secondAttribute="trailing" constant="8" id="IUn-io-9u4"/>
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="Ae2-yk-pGM" secondAttribute="trailing" constant="130" id="J8n-eQ-GsE"/>
-                <constraint firstItem="PMo-po-ZNb" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="136" id="JdX-na-Ks5"/>
+                <constraint firstItem="PMo-po-ZNb" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="140" id="JdX-na-Ks5"/>
                 <constraint firstItem="cBH-77-Qd3" firstAttribute="leading" secondItem="arn-4j-Uwf" secondAttribute="trailing" constant="10" id="LqC-aD-yoW"/>
                 <constraint firstItem="arn-4j-Uwf" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="40" id="PdE-fW-ELl"/>
                 <constraint firstItem="h9f-Wk-gaI" firstAttribute="top" secondItem="arn-4j-Uwf" secondAttribute="bottom" constant="3" id="Pdc-vE-i61"/>
@@ -114,7 +122,7 @@
                 <constraint firstItem="KHQ-oo-RCw" firstAttribute="centerY" secondItem="PMo-po-ZNb" secondAttribute="centerY" id="QeP-WT-dHm"/>
                 <constraint firstItem="cBH-77-Qd3" firstAttribute="top" secondItem="PMo-po-ZNb" secondAttribute="bottom" constant="22" id="TLR-Se-rbS"/>
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="cG0-ft-6KY" secondAttribute="trailing" constant="38" id="VGx-6x-Yiv"/>
-                <constraint firstItem="ZAL-rZ-fWX" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="114" id="VQP-Md-DRM"/>
+                <constraint firstItem="ZAL-rZ-fWX" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="120" id="VQP-Md-DRM"/>
                 <constraint firstAttribute="trailing" secondItem="o1b-Sz-uRr" secondAttribute="trailing" id="X0p-zO-1VV"/>
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="bottom" secondItem="o1b-Sz-uRr" secondAttribute="bottom" id="Xwg-7x-hyb"/>
                 <constraint firstItem="7EU-8V-Kgz" firstAttribute="top" secondItem="cG0-ft-6KY" secondAttribute="bottom" constant="2" id="YIP-F1-nZx"/>
@@ -133,7 +141,7 @@
                 <constraint firstItem="BPy-fb-3XU" firstAttribute="trailing" secondItem="7EU-8V-Kgz" secondAttribute="trailing" constant="114" id="xQI-w9-I9a"/>
                 <constraint firstItem="m49-XN-Rv2" firstAttribute="top" secondItem="h9f-Wk-gaI" secondAttribute="bottom" constant="8" id="z3h-xP-K1G"/>
                 <constraint firstItem="h9f-Wk-gaI" firstAttribute="leading" secondItem="BPy-fb-3XU" secondAttribute="leading" constant="110" id="zZN-WM-u6J"/>
-                <constraint firstItem="m49-XN-Rv2" firstAttribute="top" secondItem="KFJ-tu-8xk" secondAttribute="bottom" constant="14" id="zmE-zB-W3x"/>
+                <constraint firstItem="m49-XN-Rv2" firstAttribute="top" secondItem="KFJ-tu-8xk" secondAttribute="bottom" constant="16" id="zmE-zB-W3x"/>
                 <constraint firstAttribute="trailing" secondItem="KHQ-oo-RCw" secondAttribute="trailing" constant="32" id="zp6-lZ-ltw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

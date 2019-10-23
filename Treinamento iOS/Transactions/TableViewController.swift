@@ -25,6 +25,16 @@ class TransactionItem {
     }
 }
 
+class GroupTransaction {
+    var date: String
+    var transactions: [TransactionItem]
+    
+    init(_ date: String,_ transactions: [TransactionItem]) {
+        self.date = date
+        self.transactions = transactions
+    }
+}
+
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //Data Source
@@ -37,24 +47,66 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
     }
     
-    var transactionsItems = [
-        TransactionItem(id: 1, type: "SUPERMERCADO", title: "Armazém João das Couves", amount: 1500.00, hour: "09:00AM"),
-        TransactionItem(id: 2, type: "TRANSFERÊNCIA", title: "Aluguel Casa", amount: 2500.00, hour: "07:00PM"),
-        TransactionItem(id: 3, type: "ASSINATURAS", title: "Spotify", amount: 17.90, hour: "4:00PM")
+    var transactionsGrupItems = [
+        GroupTransaction("Hoje", [
+            TransactionItem(id: 1, type: "SUPERMERCADO", title: "Armazém João das Couves", amount: 1500.00, hour: "09:00AM"),
+            TransactionItem(id: 2, type: "TRANSFERÊNCIA", title: "Aluguel Casa", amount: 2500.00, hour: "07:00PM"),
+            TransactionItem(id: 3, type: "ASSINATURAS", title: "Spotify", amount: 17.90, hour: "4:00PM")
+        ]),
+        GroupTransaction("22/10/2019", [
+            TransactionItem(id: 1, type: "SUPERMERCADO", title: "Armazém João das Couves", amount: 1500.00, hour: "09:00AM"),
+            TransactionItem(id: 2, type: "TRANSFERÊNCIA", title: "Aluguel Casa", amount: 2500.00, hour: "07:00PM"),
+            TransactionItem(id: 3, type: "ASSINATURAS", title: "Spotify", amount: 17.90, hour: "4:00PM")
+        ]),
+        GroupTransaction("21/10/2019", [
+            TransactionItem(id: 1, type: "SUPERMERCADO", title: "Armazém João das Couves", amount: 1500.00, hour: "09:00AM"),
+            TransactionItem(id: 2, type: "TRANSFERÊNCIA", title: "Aluguel Casa", amount: 2500.00, hour: "07:00PM"),
+            TransactionItem(id: 3, type: "ASSINATURAS", title: "Spotify", amount: 17.90, hour: "4:00PM")
+        ])
     ]
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1 + self.transactionsGrupItems.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if(section == 0)
+        {
+            return 2
+        } else
+        {
+            return self.transactionsGrupItems[section - 1].transactions.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if(indexPath.item == 0)
+        if(indexPath.section == 0)
         {
-            return tableView.dequeueReusableCell(withIdentifier: "CardOneViewCell", for: indexPath)
+            if(indexPath.item == 0)
+            {
+                return tableView.dequeueReusableCell(withIdentifier: "CardOneViewCell", for: indexPath)
+            } else
+            {
+                return tableView.dequeueReusableCell(withIdentifier: "CardTwoCell", for: indexPath)
+            }
         } else
         {
-            return tableView.dequeueReusableCell(withIdentifier: "CardTwoCell", for: indexPath)
+            /*let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionsView", for: indexPath)
+            let view = cell.subviews.first as! TransactionsView
+            
+            return cell*/
+            
+            return tableView.dequeueReusableCell(withIdentifier: "TransactionsView", for: indexPath)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if(section > 0)
+        {
+            return self.transactionsGrupItems[section - 1].date
+        }
+        return nil
     }
 }
