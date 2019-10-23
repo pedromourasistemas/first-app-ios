@@ -35,5 +35,9 @@ class ViewController: UIViewController {
     @IBAction func callSecondView(_ sender: Any) {
         self.performSegue(withIdentifier: "secondViewSegue", sender: self)
     }
+    
+    @IBAction func performCallTransactionView(_ sender: Any) {
+        self.performSegue(withIdentifier: "TransactionsSegue", sender: self)
+    }
 }
 

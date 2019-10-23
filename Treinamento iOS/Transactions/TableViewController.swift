@@ -30,6 +30,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     //Data Source
     //var transactionsItems: [String] = []
     
+    @IBOutlet weak var transactionsTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -41,12 +44,17 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     ]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        if(indexPath.item == 0)
+        {
+            return tableView.dequeueReusableCell(withIdentifier: "CardOneViewCell", for: indexPath)
+        } else
+        {
+            return tableView.dequeueReusableCell(withIdentifier: "CardTwoCell", for: indexPath)
+        }
     }
-    
-    
 }

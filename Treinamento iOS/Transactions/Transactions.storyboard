@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="tX3-h9-M2i" kind="show" id="t4H-kh-0BP"/>
+                        <segue destination="tX3-h9-M2i" kind="relationship" relationship="rootViewController" id="2Of-Xr-kdo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zf8-rR-J7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,18 +27,14 @@
         <!--MainTabBarController-->
         <scene sceneID="GRC-ps-RM6">
             <objects>
-                <tabBarController title="MainTabBarController" id="H6z-Wp-Z0f" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TransactionsTabBarController" title="MainTabBarController" id="H6z-Wp-Z0f" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Kc-aw-ipB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="cbY-0b-AmJ" kind="relationship" relationship="viewControllers" id="nwP-qV-Kb3"/>
-                        <segue destination="eVw-ek-oyd" kind="relationship" relationship="viewControllers" id="7dG-5K-eyb"/>
-                        <segue destination="L9q-sP-LpP" kind="relationship" relationship="viewControllers" id="sew-p5-ngH"/>
-                        <segue destination="XVz-zJ-Uh3" kind="relationship" relationship="viewControllers" id="sJ6-hF-oJF"/>
-                        <segue destination="rS0-vq-rt6" kind="relationship" relationship="viewControllers" id="Gwq-tJ-rlo"/>
+                        <segue destination="cbY-0b-AmJ" kind="relationship" relationship="viewControllers" id="5Wc-ww-9az"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEl-al-kIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -104,17 +100,16 @@
         <!--Item-->
         <scene sceneID="Cgr-v5-PzK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfm-id-b19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="tX3-h9-M2i" customClass="TableViewController" customModule="Treinamento_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableViewController" id="tX3-h9-M2i" customClass="TableViewController" customModule="Treinamento_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h84-ed-YPF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-fg-hvH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="324" id="3Vv-P5-4UE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardOneViewCell" rowHeight="324" id="3Vv-P5-4UE">
                                         <rect key="frame" x="0.0" y="28" width="414" height="324"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Vv-P5-4UE" id="POy-3g-baz">
@@ -134,10 +129,30 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardTwoCell" rowHeight="120" id="g9d-OT-Fhe">
+                                        <rect key="frame" x="0.0" y="352" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g9d-OT-Fhe" id="wW4-ZT-PyH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-mi-9b4" userLabel="Card Two View" customClass="CardTwoView" customModule="Treinamento_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="2ck-mi-9b4" secondAttribute="trailing" id="B9a-g6-Rho"/>
+                                                <constraint firstItem="2ck-mi-9b4" firstAttribute="leading" secondItem="wW4-ZT-PyH" secondAttribute="leading" id="ELK-iT-4UM"/>
+                                                <constraint firstAttribute="bottom" secondItem="2ck-mi-9b4" secondAttribute="bottom" id="I7Z-HT-9Su"/>
+                                                <constraint firstItem="2ck-mi-9b4" firstAttribute="top" secondItem="wW4-ZT-PyH" secondAttribute="top" id="Phi-0n-yK3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="h84-ed-YPF" id="E5A-aB-Tvd"/>
-                                    <outlet property="delegate" destination="h84-ed-YPF" id="0A8-Yf-3ZQ"/>
+                                    <outlet property="dataSource" destination="tX3-h9-M2i" id="Py6-Wf-qlS"/>
+                                    <outlet property="delegate" destination="tX3-h9-M2i" id="6ew-LR-osc"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -152,7 +167,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8Wd-E0-Dno"/>
                     <navigationItem key="navigationItem" id="h6x-9i-Yge"/>
+                    <connections>
+                        <outlet property="transactionsTableView" destination="GU1-fg-hvH" id="ACz-gY-6Dj"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfm-id-b19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477" y="78"/>
         </scene>

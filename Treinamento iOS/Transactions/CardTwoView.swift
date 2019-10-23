@@ -6,4 +6,10 @@
 //  Copyright © 2019 Social Bank. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+@IBDesignable class CardTwoView: UIBaseView {
+    
+}
+
+
