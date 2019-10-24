@@ -7,7 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionsView" customModule="Treinamento_iOS" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionsView" customModule="Treinamento_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="bLT-7P-sqm" id="caX-hL-qAZ"/>
+                <outlet property="hourEventLabel" destination="UdE-bk-Ikc" id="uyM-1e-pri"/>
+                <outlet property="namePlaceLabel" destination="OVR-zp-aP1" id="c2e-cg-nGl"/>
+                <outlet property="titleTransactionLabel" destination="wQT-tu-O95" id="w1R-2g-lYR"/>
+                <outlet property="transactionIconImage" destination="c51-Xl-umo" id="Vt3-vy-PJa"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="e00-cz-g48">
             <rect key="frame" x="0.0" y="0.0" width="354" height="108"/>

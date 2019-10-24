@@ -1,0 +1,6 @@
+framework module Pods_Treinamento_iOS_Treinamento_iOSUITests {
+  umbrella header "Pods-Treinamento iOS-Treinamento iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
